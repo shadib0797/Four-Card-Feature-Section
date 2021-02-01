@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  background-color: hsl(0, 0%, 98%);
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+}
+
+h1 {
+  color: hsl(234, 12%, 34%);
+  font-weight: 600;
+}
+
+h4 {
+  color: hsl(234, 12%, 34%);
+  font-size: 16px;
+  font-weight: 600;
+
+}
+
+p {
+  color: hsl(234, 12%, 34%);
+  font-size: 15px;
+  font-weight: 200;
+  line-height: 1.5;
+  margin-top: 1rem;
+}
+
+span {
+  font-weight: 200;
+}
+
+
+.header {
+  margin: 48px auto;
+  text-align: center;
+  width: 35%;
+}
+
+
+.body {
+  display: flex;
+  justify-content: center;
+}
+
+
+.card {
+  box-shadow: 2px 6px 14px hsl(229, 6%, 66%);
+  background-color: #fff;
+  border-radius: 4px;
+  height: 200px;
+  padding: 16px;
+  width: 300px;
+  margin-bottom: 24px;
+}
+
+.card > p{
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+.col-beg{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.col-middle{
+  margin: 0 24px;
+}
+
+.col-end{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.supervisor{
+  border-top: 3px solid hsl(180, 62%, 55%);
+  background-image: url("images/icon-supervisor.svg");
+  background-repeat: no-repeat;
+  background-position: bottom 24px right 24px;
+}
+
+.team{
+  border-top: 3px solid hsl(0, 78%, 62%);
+  background-image: url("images/icon-team-builder.svg");
+  background-repeat: no-repeat;
+  background-position: bottom 24px right 24px;
+}
+
+.karma{
+  border-top: 3px solid hsl(34, 97%, 64%);
+  background-image: url("images/icon-karma.svg");
+  background-repeat: no-repeat;
+  background-position: bottom 24px right 24px;
+}
+
+.calculator{
+  border-top: 3px solid hsl(212, 86%, 64%);
+  background-image: url("images/icon-calculator.svg");
+  background-repeat: no-repeat;
+  background-position: bottom 24px right 24px;
+}
+
+@media only screen and (max-width : 1056px) {
+  .header{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+  }
+
+.header > p{
+  width:75%;
+  }
+  
+  .body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .col-middle{
+    margin: 0;
+  }
+}
